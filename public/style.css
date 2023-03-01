@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #262626;
+    background: linear-gradient(60deg, #273e4a, #739aaf);
+}
+
+body, html, label, button, a, text, input{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page-wrapper{
+    margin: 5em auto;
+    width: 50%;
+    max-width: 400px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0e1ba;
+    box-shadow: 0 20px 24px rgba(60, 72, 97, 0.553);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.new-todo-label{
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #634906;
+}
+
+input{
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #926c0a;
+    background-color: #f0e1ba;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #926c0a;
+}
+
+.btn-group{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.btn-group button{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #dcbe7e;
+    color: #634906;
+}
+
+.btn-group button:hover{
+    background-color: #926c0a;
+    color: #f0e1ba;
+    transition: .3s;
+}
+
+.btn-group button:active{
+    background-color: #634906;
+    color: #f0e1ba;
+}
+
+.todo-container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
+    padding: 8px 0;
+    flex-wrap: wrap;
+}
+
+.complete-check{
+    margin-left: 8px;
+    accent-color: #926c0a;
+}
+
+.todos-left{
+    color: #634906;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.todo-item p{
+    margin-left: 8px;
+    font-size: 16px;
+}
